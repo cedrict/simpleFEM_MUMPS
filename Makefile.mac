@@ -1,0 +1,25 @@
+FLAGS =  -c -ffree-line-length-none  -O3 -mtune=native
+
+#FLAGS =  -mtune=native  -c -ffree-line-length-none  -O3 -fbounds-check -fcheck=all -Wall 
+
+F90      = gfortran
+F77      = gfortran
+MAKE     = make
+
+MUMPS    = /Users/geogarfield/work/LIBRARIES/MUMPS_5.1.2/lib
+MUMPS2   = /Users/geogarfield/work/LIBRARIES/MUMPS_5.1.2/libseq
+PORD     = /Users/geogarfield/work/LIBRARIES/MUMPS_5.1.2/PORD
+METIS    = /Users/geogarfield/work/LIBRARIES/metis-5.1.0/build/Darwin-x86_64/libmetis
+
+LIBS = \
+-framework Accelerate\
+-L$(MUMPS) -ldmumps -lmumps_common\
+-L$(MUMPS2) -lmpiseq \
+-L$(PORD) -lpord \
+-L$(METIS) -lmetis 
+
+
+INCLUDE = \
+
+OPTIONS = 
+

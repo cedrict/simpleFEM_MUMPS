@@ -1,0 +1,37 @@
+++++++++++++++++++++
+INSTALLATION
+++++++++++++++++++++
+Assuming you have installed MUMPS correctly,
+simply tune the Makefile.machine to your machine.
+MUMPS requires BLAS. You can compile your own
+BLAS library, or you can use the one provided 
+by your operating system.
+For instance, for Mac OSX, it is called "framework Accelerate".
+
+Then simply do
+
+make code2D
+
+or 
+
+make code3D
+
+If all goes well, you should now have the 'simplefem' 
+executable.
+
+Simply run it with 
+./simplefem
+
+
+
+If you wish to look at timings, run it as follows:
+./run
+
+note that
+dmumps_c.h
+dmumps_root.h
+dmumps_struc.h
+mpif.h 
+should come from your MUMPS install folders.
+
+
