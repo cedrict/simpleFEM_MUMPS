@@ -1,0 +1,5 @@
+*.o
+*.dat
+*.out
+*.vtu
+fort*
