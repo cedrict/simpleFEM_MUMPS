@@ -1,6 +1,6 @@
 .SUFFIXES:.out .o .s .c .F .f .f90 .e .r .y .yr .ye .l .p .sh .csh .h
 
-include Makefile.mac
+include Makefile.machine
 
 default: code2D
 

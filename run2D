@@ -1,4 +1,4 @@
-make
+make code2D
 ./simplefem > opla
 ./scr
 mv opla OUT/

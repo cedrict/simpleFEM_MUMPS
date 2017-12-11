@@ -84,7 +84,7 @@ call DMUMPS(idV)                               ! MUMPS initialisation
 
 if (iproc==0) open (unit=1020,file='OUT/mumps_output_info')
 
-do kkk=4,7!22 ! loop over resolutions
+do kkk=4,22 ! loop over resolutions
 
    nnx=int(sqrt(2.d0**kkk))
    nny=nnx
