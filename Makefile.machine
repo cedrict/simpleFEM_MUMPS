@@ -10,6 +10,7 @@ MUMPS    = /Users/geogarfield/work/LIBRARIES/MUMPS_5.1.2/lib
 MUMPS2   = /Users/geogarfield/work/LIBRARIES/MUMPS_5.1.2/libseq
 PORD     = /Users/geogarfield/work/LIBRARIES/MUMPS_5.1.2/PORD
 METIS    = /Users/geogarfield/work/LIBRARIES/metis-5.1.0/build/Darwin-x86_64/libmetis
+MUMPS3   = /Users/geogarfield/work/LIBRARIES/MUMPS_5.1.2/include
 
 LIBS = \
 -framework Accelerate\
@@ -20,6 +21,7 @@ LIBS = \
 
 
 INCLUDE = \
+-I$(MUMPS2) -I$(MUMPS3)
 
 OPTIONS = 
 
